@@ -1,0 +1,198 @@
+/* --- Global Styles and Typography --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /* Deep purple background */
+    color: #e0e0ff; /* Light text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 95%; /* Thoda zyada space denge */
+    width: 1200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #162447; /* Slightly lighter dark background for containers */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    color: #bae8e8; /* Accent color for headings */
+    border-bottom: 2px solid rgba(186, 232, 232, 0.1);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* --- Links and Buttons (Accent Color) --- */
+a {
+    color: #e3f2fd; /* Light blue links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff9d4d; /* Orange hover color */
+}
+
+button {
+    background-color: #ff9d4d; /* Main accent color for buttons */
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #ffb74d;
+    transform: translateY(-1px);
+}
+
+/* --- Header and Balance --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#userBalance {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ff7f; /* Bright green for balance */
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(0, 255, 127, 0.1);
+}
+
+/* --- Sections and Forms --- */
+.section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #0d1321; /* Dark background for sub-sections */
+    border-radius: 8px;
+}
+
+#tradeForm input[type="text"],
+#tradeForm input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3c4974;
+    background-color: #1a1a2e;
+    color: #e0e0ff;
+    border-radius: 4px;
+}
+
+#tradeForm p {
+    font-weight: bold;
+    color: #bae8e8;
+}
+
+/* --- Table Styles (Portfolio) --- */
+#portfolioTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#portfolioTable th, 
+#portfolioTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #3c4974;
+}
+
+#portfolioTable th {
+    background-color: #162447;
+    color: #ff9d4d;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+#portfolioTable tr:hover {
+    background-color: #1a1a2e;
+}
+
+/* --- Message Boxes (Feedback) --- */
+.message-box {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.success {
+    background-color: #28a745; /* Green */
+    color: #fff;
+}
+
+.error {
+    background-color: #dc3545; /* Red */
+    color: #fff;
+}
+
+/* --- Analytics Styles --- */
+#totalPnl {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Specific colors for profit/loss */
+.section p span {
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+/* --- Login/Register Page Specific Styles --- */
+.form-section {
+    display: none;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section.active {
+    display: block;
+}
+
+#login-form input,
+#register-form input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #3c4974;
+    background-color: #1a1a2e;
+    color: #e0e0ff;
+    border-radius: 4px;
+}
+
+#login-form button,
+#register-form button {
+    width: 94%;
+    margin-top: 10px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header button {
+        margin-top: 10px;
+    }
+    #tradeForm input {
+        width: 100%;
+        margin-right: 0;
+    }
+}
